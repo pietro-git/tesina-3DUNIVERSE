@@ -1,16 +1,32 @@
-body {background: darkred;}
+html,body{height:100%;}
+body {background: rgb(158, 158, 158);}
+
+p{line-height: 22px;}
 
 .header{background: grey}
-.header__logo{color:darkred; float:left;; display: block; padding:20px;}
-.header__menu{float:right; margin: 0; padding: 0;}
+.header__logo{color:darkred; float:left; display: block; padding:20px;}
+.header__menu{color:darkred;float:right; margin: 0; padding: 0;}
 .header__menu__item{display:inline-block;}
 .header__menu__item a{color: black; border: 2px solid blanchedalmond; display: block; padding:10px;}
-.header__menu__item a:hover{background: blanchedalmond;}
+.header__menu__item a:hover{background: darkred;}
 
 .header__icon-bar{display:block;float:right; padding:20px;}
 .header__icon-bar span{display: block;height:3px; width: 30px; background: blanchedalmond; margin-bottom: 5px;}
 
 
+.cover{height:70%; border:1px solid black;
+
+  background-image: url("https://www.cognizion.com/wp-content/uploads/2012/05/Cognizion-Hexagon-background.png");
+  background position: center;
+}
+
+.cover__caption{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.cover__caption__copy{ display: table-cell; vertical-align:middle; text-align: center; color: darkred;}
 
 .clearfix:after {
     visibility: hidden;
@@ -22,3 +38,10 @@ body {background: darkred;}
   }
   * html .clearfix             { zoom: 1; } /* IE6 */
   *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+  .cards{border: 1px; solid: red; max-width:1200px; margin: 40px auto;}
+  .card{border: 1px; solid: red; width: 30%;margin: 0 1.5%; background-image: url("https://www.cognizion.com/wp-content/uploads/2012/05/Cognizion-Hexagon-background.png");float:left;}
+  .card_image{width: 100%; height: auto;}
+  .card_copy{padding:5px 20px;}
+  .card_copy h3 {margin-bottom: 0;}
